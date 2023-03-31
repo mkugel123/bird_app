@@ -10,7 +10,7 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
-
+gem "puma", "~> 5.0"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -24,7 +24,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "puma", "~> 5.0"
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
